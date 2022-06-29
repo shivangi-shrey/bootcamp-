@@ -52,8 +52,9 @@ for(let i=0;i<pixel;i++){
 let count=0
 for(let i=0;i<image;i++){
     if(arr2[0]==arr[i]){
+        //console.log(arr2[0])
         count++;
     }
    // console.log(count)
 }
-console.log(count)
+//console.log(count)

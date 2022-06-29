@@ -18,11 +18,8 @@ for(let i=0;i<n;i++){
 } //console.log(arr)
 for(let i=0;i<arr[0].length;i++){ // row
      let temp =[]
-     console.log(temp)
+     //console.log(temp)
   for(let j=0;j<arr.length;j++){ // column
-    //t=arr[i][j];
-    //arr[i][j]=arr[j][i];
-    //arr[j][i] =t;
     temp.push(arr[j][i])
 
   }
@@ -32,3 +29,22 @@ for(let i=0;i<arr[0].length;i++){ // row
 for(k=0;k<ans.length;k++){
 console.log(...ans[k])
 }
+// let m=parseInt(readLine());
+// let arr=[];
+// for(let i=0;i<m;i++){
+//   arr[i]=readLine().split(" ");
+//  // console.log(arr[i])
+// }
+// let ans=[];
+// for(let columnCount=0;columnCount<arr.length+1;columnCount++){
+//   let tempArray=[];
+//     for(let j=0;j<m;j++){
+//         tempArray.push(arr[j][columnCount]);
+//     }
+//     ans.push(tempArray);
+// }
+// for (let i=0;i<ans.length;i++){
+// console.log(...ans[i]);
+// }
+
+
