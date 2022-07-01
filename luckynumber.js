@@ -14,7 +14,7 @@ let count = 1
 for(let i=0;i<n;i++){
  //let m = parseInt(readLine());
  arr.push(parseInt(readLine()));
- //console.log(arr)
+ console.log(arr)
  
 } 
 for(let i=0;i<arr.length;i++){
