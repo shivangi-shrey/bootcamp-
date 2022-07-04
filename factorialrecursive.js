@@ -9,20 +9,20 @@ function readLine() {
 }
 
 // -------- Do NOT edit anything above this line ----------
-
-function Factorial(n){
-  // Implement this function
-  if(n<0){
-    return undefined;
+function factorial(number){
+  // write your code here
+  if(number==0){
+    return "1";
   }
-  else if (n==0){
-    return ("1");
+  else if(number<0){
+    return "undefine"
   }
   else{
-    
-    return (n*Factorial(n-1));
+    return (number*factorial(number-1))
   }
-}
-
-let n=parseInt(readLine());
-console.log(Factorial(n));
+  
+  }
+  
+  let number = parseInt(readLine());
+  
+  console.log(factorial(number));
