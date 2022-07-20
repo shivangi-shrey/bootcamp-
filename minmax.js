@@ -13,13 +13,8 @@ function readLine() {
 // ## Please fill the following function
 function maximumValue(inputNumbers){
     // write below this here
-    let m2 = -9999999999
-    for(let i=0; i<inputNumbers.length;i++){
-        if(inputNumbers[i]>m2){
-            m2 = inputNumbers[i]
-        }
-    }
-    return m2;
+    inputNumbers = Math.max(...list2);
+    return inputNumbers;
 }
     
 
@@ -28,13 +23,7 @@ function maximumValue(inputNumbers){
 // ## The integer should be minimum value of input list
 function minimumValue(inputNumbers){
     // Please write below this
-    let m1 = + 99999999999
-    for(let i=0;i<inputNumbers.length;i++){
-        if(inputNumbers[i]<m1){
-          m1 = inputNumbers[i]
-        }
-    }
-    return m1;
+    return Math.min(...list1);
 }
 
 
@@ -44,14 +33,21 @@ function minimumValue(inputNumbers){
 // ## If no such numbers exist in the input list between m1 and m2 return a list with -1 i.e [-1]
 function getNumbersInRange(inputNumbers, m1, m2){
     // Please write below this line
-    let arr = []
-    for(let i=0;i<inputNumbers.length;i++){
-        if(inputNumbers[i]>=m1&&inputNumbers[i]<=m2){
-            arr.push(inputNumbers[i])
-        }
-        
+    if(m1>m2){
+        let temp = m1
+        m1=m2
+        m2=temp;
     }
-    return arr
+    inputNumbers=[-1]
+    for(let i=0;i<list3.length;i++){
+        if(m1<=list3[i]&&m2>=list3[i]){
+            inputNumbers.push(list3[i])
+        }
+    }
+    if(inputNumbers.length>1){
+        inputNumbers.shift();
+    }
+    return inputNumbers;
 }
 
 

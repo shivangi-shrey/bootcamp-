@@ -5,14 +5,31 @@ data = data.split('\n');
 
 function readLine() {
   idx++;
-  return data[idx - 1].trim();
+  return data[idx - 1];
 }
 
-// -------- Do NOT edit anything above this line ----------
-function findseat(person){
-    if( person>60&&person==M){
+// // -------- Do NOT edit anything above this line ----------
+ let n = parseInt(readLine())
+ for(let i=0;i<n;i++){
+   let k = parseInt(readLine())
+   let person = readLine()
+   //console.log(person)
+   findseat(k,person)
+ }
+
+function findseat(k,person){
+    if( k>=60 && person=="M"){
+      console.log("eligible")
         
     }
-
-
+    else if (k>58&&person=="F"){
+      console.log("eligible")
+    }
+    else if (k>34&&person=="T"){
+      console.log("eligible")
+    }
+    else{
+      console.log("not eligible")
+    }
 }
+ 
